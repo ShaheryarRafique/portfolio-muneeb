@@ -9,7 +9,7 @@ export const siteConfig = {
   email: "contact@example.com", // UPDATE THIS
   whatsapp: "+1234567890", // UPDATE THIS (format: +countrycode-number)
   whatsappLink: "https://wa.me/1234567890", // UPDATE THIS (numbers only after wa.me/)
-  instagram: "https://instagram.com/hafizmuneeb", // UPDATE THIS
+  instagram: "https://www.instagram.com/muneeb.rehman098/",
   googleFormUrl: "https://forms.gle/WnQ2tc7k5waHwcRC7",
   foundedYear: 2020, // UPDATE THIS
 };
