@@ -4,14 +4,27 @@ interface CardProps {
   children: React.ReactNode;
   className?: string;
   hover?: boolean;
+  glass?: boolean;
+  gradient?: boolean;
 }
 
-export default function Card({ children, className = '', hover = false }: CardProps) {
+export default function Card({
+  children,
+  className = '',
+  hover = false,
+  glass = false,
+  gradient = false
+}: CardProps) {
   return (
     <div
       className={classNames(
-        'bg-white rounded-lg shadow-md p-6 border border-gray-100',
-        hover && 'transition-all duration-300 hover:shadow-xl hover:-translate-y-1',
+        'rounded-2xl p-6 transition-all duration-300',
+        glass
+          ? 'glass shadow-lg'
+          : gradient
+          ? 'bg-gradient-to-br from-white to-primary-50 shadow-lg border border-primary-100'
+          : 'bg-white shadow-md border border-gray-100',
+        hover && 'hover:shadow-xl hover:-translate-y-2 hover:border-primary-200 cursor-pointer',
         className
       )}
     >

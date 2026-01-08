@@ -330,3 +330,49 @@ export const termsOfService = {
     },
   ],
 };
+
+// Testimonials
+export const testimonials = [
+  {
+    id: 1,
+    name: "Ahmed Al-Hassan",
+    location: "United Kingdom",
+    text: "Learning with Hafiz Muneeb has transformed my recitation. His patient teaching style and deep knowledge of Tajwīd have helped me correct years of mistakes.",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Fatima Rahman",
+    location: "Canada",
+    text: "The Maqāmāt lessons are incredible. I never thought I could beautify my recitation like this. Alḥamdulillāh for finding such a dedicated teacher.",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Yusuf Ibrahim",
+    location: "United States",
+    text: "As someone who wanted to perfect the Adhān, Ustaaz Muneeb's training has been invaluable. His attention to detail and encouraging approach make learning enjoyable.",
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: "Aisha Mohammed",
+    location: "Australia",
+    text: "The structured approach to Tajwīd combined with practical application has helped me recite with confidence. Highly recommended for serious learners.",
+    rating: 5,
+  },
+  {
+    id: 5,
+    name: "Omar Khalid",
+    location: "United Arab Emirates",
+    text: "Learning Qirā'āt with proper Tajwīd has been a dream come true. The lessons are clear, organized, and spiritually uplifting.",
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: "Zainab Ali",
+    location: "Malaysia",
+    text: "From basic Tajwīd to advanced Maqāmāt, every lesson is filled with beneficial knowledge. May Allāh reward Ustaaz Muneeb for his dedication.",
+    rating: 5,
+  },
+];
