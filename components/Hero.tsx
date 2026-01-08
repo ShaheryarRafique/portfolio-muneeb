@@ -16,10 +16,10 @@ export default function Hero({
   description,
   primaryCta,
   secondaryCta,
-  imageSrc = '/placeholder-hero.jpg',
+  imageSrc = '/teacher-photo.jpg',
 }: HeroProps) {
   return (
-    <div className="relative overflow-hidden gradient-bg">
+    <div className="relative overflow-hidden gradient-bg pt-16 md:pt-20">
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
@@ -27,7 +27,7 @@ export default function Hero({
         <div className="absolute top-40 left-40 w-80 h-80 bg-primary-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Content */}
           <div className="text-center lg:text-left space-y-8 animate-fade-in">
@@ -106,28 +106,14 @@ export default function Hero({
           {/* Right side - Image */}
           <div className="relative animate-fade-in-scale delay-200">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              {/* Placeholder for teacher image */}
-              <div className="aspect-[4/5] bg-gradient-to-br from-primary-100 to-accent-100 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-white/50 backdrop-blur-sm flex items-center justify-center">
-                    <BookOpen className="w-16 h-16 text-primary-600" />
-                  </div>
-                  <p className="text-gray-700 font-medium">Add teacher photo here</p>
-                  <p className="text-sm text-gray-600 mt-2">
-                    Place image at:<br />
-                    <code className="text-xs bg-white/50 px-2 py-1 rounded">/public/teacher-photo.jpg</code>
-                  </p>
-                </div>
-              </div>
-              {/* Uncomment when image is added */}
-              {/* <img
+              <img
                 src={imageSrc}
                 alt="Hafiz Muneeb - Qur'an Teacher"
-                className="w-full h-full object-cover"
-              /> */}
+                className="w-full aspect-[4/5] object-cover"
+              />
 
               {/* Decorative frame */}
-              <div className="absolute inset-0 border-4 border-white/20 rounded-3xl"></div>
+              <div className="absolute inset-0 border-4 border-white/20 rounded-3xl pointer-events-none"></div>
             </div>
 
             {/* Floating card */}
